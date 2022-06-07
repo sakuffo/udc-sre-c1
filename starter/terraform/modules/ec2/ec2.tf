@@ -1,7 +1,8 @@
 resource "aws_instance" "web" {
-  ami           = var.aws_ami
-  instance_type = "t3.micro"
-  key_name      = "udacity"
+  ami                    = var.aws_ami
+  instance_type          = "t3.micro"
+  key_name               = "udacity"
+  # vpc_security_group_ids = [aws_security_group.ec2_sg.id]
   tags = {
     Name = "ubuntu"
   }

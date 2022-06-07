@@ -16,5 +16,5 @@ module "project_ec2" {
   vpc_id             = module.vpc.vpc_id
 }
 
-# "ami-02390ef9863c59210" us-east-1
+# ami-02390ef9863c59210 us-east-1
 # ami-0afbbb3deeac3d738 us-east-2
